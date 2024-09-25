@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Josefin Sans", sans-serif;;
+    background-color:rgb(233, 233, 233) !important;
+}
+
+header {
+    position: relative;
+}
+
+nav.navbar {
+    font-size:22px;
+}
+.navbar-brand {
+    font-size:35px !important;
+    margin-left: 5vw;
+}
+.nav-link {
+    margin-right:25px;
+    transition: transform 0.3s !important;
+}
+.nav-link:hover {
+    color:#fff !important;
+    transform: translateY(2px);
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    top:20vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width:100px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.card {
+    box-shadow: 0px 3px 5px rgb(0, 0, 0,0.1) ;
+    margin-bottom: 20px;
+    border-radius: 0 !important;
+    transition: 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 10px rgb(0, 0, 0,0.2) ;
+}
+.card .btn {
+  transition: 0.3s !important;
+}
+.card .btn:hover {
+  background-color: #fff;
+  color:rgb(65, 141, 65) ;
+  font-weight:bold ;
+}
+aside .side-card {
+    border-radius: 20px;
+}
+aside .side-card h3 {
+    font-size: 20px;
+    font-weight:400;
+}
+aside .side-card ul{
+ list-style: none;
+ padding-left: 0;
+}
+aside .side-card ul a {
+  color:rgb(65, 141, 65);
+  font-size: 18px;
+  text-decoration: none !important
+}
+aside .side-card ul a:hover {
+  color: #343a40;
+}
+@media screen and (max-width:991px) {
+  header::after {
+    top:60vh;
+}
+}
+form {
+  border-radius: 10px;
+  border:2px solid #3f3c3c !important;
+  height:auto;
+  
+}
+form label {
+  font-size:large
+}
+form input {
+  width: 90%;
+  height:40px;
+  border-radius: 5px;
+  border: none;
+  outline-color: cornflowerblue;
+  font-weight: bold;
+}
+.upbtn {
+  position:absolute;
+  z-index: 100;
+  display: none;
+  top:120%;
+  right: 10%;
+  color: #29639c;
+  font-size: 30px;
+}
